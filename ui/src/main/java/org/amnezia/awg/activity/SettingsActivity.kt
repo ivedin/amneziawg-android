@@ -2,7 +2,7 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package org.amnezia.awg.activity
+package com.dragsotka.vpn.activity
 
 import android.content.Intent
 import android.os.Build
@@ -13,12 +13,12 @@ import androidx.fragment.app.commit
 import androidx.lifecycle.lifecycleScope
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
-import org.amnezia.awg.Application
-import org.amnezia.awg.QuickTileService
-import org.amnezia.awg.R
-import org.amnezia.awg.backend.AwgQuickBackend
-import org.amnezia.awg.preference.PreferencesPreferenceDataStore
-import org.amnezia.awg.util.AdminKnobs
+import com.dragsotka.vpn.Application
+import com.dragsotka.vpn.QuickTileService
+import com.dragsotka.vpn.R
+import com.dragsotka.vpn.backend.AwgQuickBackend
+import com.dragsotka.vpn.preference.PreferencesPreferenceDataStore
+import com.dragsotka.vpn.util.AdminKnobs
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

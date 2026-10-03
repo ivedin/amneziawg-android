@@ -3,13 +3,13 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.amnezia.awg.widget
+package com.dragsotka.vpn.widget
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.View
 import com.google.android.material.card.MaterialCardView
-import org.amnezia.awg.R
+import com.dragsotka.vpn.R
 
 class TvCardView(context: Context?, attrs: AttributeSet?) : MaterialCardView(context, attrs) {
     var isUp: Boolean = false

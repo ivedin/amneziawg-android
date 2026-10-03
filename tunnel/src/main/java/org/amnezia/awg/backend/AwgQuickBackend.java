@@ -3,19 +3,19 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.amnezia.awg.backend;
+package com.dragsotka.vpn.backend;
 
 import android.content.Context;
 import android.util.Log;
 import android.util.Pair;
 
-import org.amnezia.awg.backend.BackendException.Reason;
-import org.amnezia.awg.backend.Tunnel.State;
-import org.amnezia.awg.util.RootShell;
-import org.amnezia.awg.util.ToolsInstaller;
-import org.amnezia.awg.config.Config;
-import org.amnezia.awg.crypto.Key;
-import org.amnezia.awg.util.NonNullForAll;
+import com.dragsotka.vpn.backend.BackendException.Reason;
+import com.dragsotka.vpn.backend.Tunnel.State;
+import com.dragsotka.vpn.util.RootShell;
+import com.dragsotka.vpn.util.ToolsInstaller;
+import com.dragsotka.vpn.config.Config;
+import com.dragsotka.vpn.crypto.Key;
+import com.dragsotka.vpn.util.NonNullForAll;
 
 import java.io.File;
 import java.io.FileOutputStream;

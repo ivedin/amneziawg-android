@@ -3,9 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.amnezia.awg.backend;
+package com.dragsotka.vpn.backend;
 
-import org.amnezia.awg.util.NonNullForAll;
+import com.dragsotka.vpn.util.NonNullForAll;
 
 /**
  * A subclass of {@link Exception} that encapsulates the reasons for a failure originating in

@@ -2,7 +2,7 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package org.amnezia.awg.fragment
+package com.dragsotka.vpn.fragment
 
 import android.content.pm.PackageManager
 import android.graphics.drawable.GradientDrawable
@@ -19,8 +19,8 @@ import androidx.fragment.app.setFragmentResult
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import org.amnezia.awg.R
-import org.amnezia.awg.util.resolveAttribute
+import com.dragsotka.vpn.R
+import com.dragsotka.vpn.util.resolveAttribute
 
 class AddTunnelsSheet : BottomSheetDialogFragment() {
 

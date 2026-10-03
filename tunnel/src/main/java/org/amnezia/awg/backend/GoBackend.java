@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.amnezia.awg.backend;
+package com.dragsotka.vpn.backend;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,16 +12,16 @@ import android.os.ParcelFileDescriptor;
 import android.system.OsConstants;
 import android.util.Log;
 
-import org.amnezia.awg.backend.BackendException.Reason;
-import org.amnezia.awg.backend.Tunnel.State;
-import org.amnezia.awg.util.SharedLibraryLoader;
-import org.amnezia.awg.config.Config;
-import org.amnezia.awg.config.InetEndpoint;
-import org.amnezia.awg.config.InetNetwork;
-import org.amnezia.awg.config.Peer;
-import org.amnezia.awg.crypto.Key;
-import org.amnezia.awg.crypto.KeyFormatException;
-import org.amnezia.awg.util.NonNullForAll;
+import com.dragsotka.vpn.backend.BackendException.Reason;
+import com.dragsotka.vpn.backend.Tunnel.State;
+import com.dragsotka.vpn.util.SharedLibraryLoader;
+import com.dragsotka.vpn.config.Config;
+import com.dragsotka.vpn.config.InetEndpoint;
+import com.dragsotka.vpn.config.InetNetwork;
+import com.dragsotka.vpn.config.Peer;
+import com.dragsotka.vpn.crypto.Key;
+import com.dragsotka.vpn.crypto.KeyFormatException;
+import com.dragsotka.vpn.util.NonNullForAll;
 
 import java.net.InetAddress;
 import java.util.Collections;
@@ -35,7 +35,7 @@ import java.util.concurrent.TimeoutException;
 import androidx.annotation.Nullable;
 import androidx.collection.ArraySet;
 
-import static org.amnezia.awg.GoBackend.*;
+import static com.dragsotka.vpn.GoBackend.*;
 
 /**
  * Implementation of {@link Backend} that uses the amneziawg-go userspace implementation to provide

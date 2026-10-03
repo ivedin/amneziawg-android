@@ -2,7 +2,7 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package org.amnezia.awg.model
+package com.dragsotka.vpn.model
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -12,20 +12,20 @@ import android.util.Log
 import android.widget.Toast
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable
-import org.amnezia.awg.Application.Companion.get
-import org.amnezia.awg.Application.Companion.getBackend
-import org.amnezia.awg.Application.Companion.getTunnelManager
-import org.amnezia.awg.BR
-import org.amnezia.awg.R
-import org.amnezia.awg.backend.Statistics
-import org.amnezia.awg.backend.StatusCallback
-import org.amnezia.awg.backend.Tunnel
-import org.amnezia.awg.configStore.ConfigStore
-import org.amnezia.awg.databinding.ObservableSortedKeyedArrayList
-import org.amnezia.awg.util.ErrorMessages
-import org.amnezia.awg.util.UserKnobs
-import org.amnezia.awg.util.applicationScope
-import org.amnezia.awg.config.Config
+import com.dragsotka.vpn.Application.Companion.get
+import com.dragsotka.vpn.Application.Companion.getBackend
+import com.dragsotka.vpn.Application.Companion.getTunnelManager
+import com.dragsotka.vpn.BR
+import com.dragsotka.vpn.R
+import com.dragsotka.vpn.backend.Statistics
+import com.dragsotka.vpn.backend.StatusCallback
+import com.dragsotka.vpn.backend.Tunnel
+import com.dragsotka.vpn.configStore.ConfigStore
+import com.dragsotka.vpn.databinding.ObservableSortedKeyedArrayList
+import com.dragsotka.vpn.util.ErrorMessages
+import com.dragsotka.vpn.util.UserKnobs
+import com.dragsotka.vpn.util.applicationScope
+import com.dragsotka.vpn.config.Config
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -247,7 +247,7 @@ class TunnelManager(private val configStore: ConfigStore) : BaseObservable() {
                 val manager = getTunnelManager()
                 if (intent == null) return@launch
                 val action = intent.action ?: return@launch
-                if ("org.amnezia.awg.action.REFRESH_TUNNEL_STATES" == action) {
+                if ("com.dragsotka.vpn.action.REFRESH_TUNNEL_STATES" == action) {
                     manager.refreshTunnelStates()
                     return@launch
                 }
@@ -255,8 +255,8 @@ class TunnelManager(private val configStore: ConfigStore) : BaseObservable() {
                     return@launch
                 val state: Tunnel.State
                 state = when (action) {
-                    "org.amnezia.awg.action.SET_TUNNEL_UP" -> Tunnel.State.UP
-                    "org.amnezia.awg.action.SET_TUNNEL_DOWN" -> Tunnel.State.DOWN
+                    "com.dragsotka.vpn.action.SET_TUNNEL_UP" -> Tunnel.State.UP
+                    "com.dragsotka.vpn.action.SET_TUNNEL_DOWN" -> Tunnel.State.DOWN
                     else -> return@launch
                 }
                 val tunnelName = intent.getStringExtra("tunnel") ?: return@launch

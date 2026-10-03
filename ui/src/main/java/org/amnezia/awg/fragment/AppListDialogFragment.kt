@@ -2,7 +2,7 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package org.amnezia.awg.fragment
+package com.dragsotka.vpn.fragment
 
 import android.Manifest
 import android.app.Dialog
@@ -21,12 +21,12 @@ import androidx.fragment.app.setFragmentResult
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.tabs.TabLayout
-import org.amnezia.awg.BR
-import org.amnezia.awg.R
-import org.amnezia.awg.databinding.AppListDialogFragmentBinding
-import org.amnezia.awg.databinding.ObservableKeyedArrayList
-import org.amnezia.awg.model.ApplicationData
-import org.amnezia.awg.util.ErrorMessages
+import com.dragsotka.vpn.BR
+import com.dragsotka.vpn.R
+import com.dragsotka.vpn.databinding.AppListDialogFragmentBinding
+import com.dragsotka.vpn.databinding.ObservableKeyedArrayList
+import com.dragsotka.vpn.model.ApplicationData
+import com.dragsotka.vpn.util.ErrorMessages
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

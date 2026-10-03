@@ -2,22 +2,22 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package org.amnezia.awg.util
+package com.dragsotka.vpn.util
 
 import android.content.res.Resources
 import android.os.RemoteException
 import com.google.zxing.ChecksumException
 import com.google.zxing.NotFoundException
-import org.amnezia.awg.Application
-import org.amnezia.awg.R
-import org.amnezia.awg.backend.BackendException
-import org.amnezia.awg.util.RootShell.RootShellException
-import org.amnezia.awg.config.BadConfigException
-import org.amnezia.awg.config.InetEndpoint
-import org.amnezia.awg.config.InetNetwork
-import org.amnezia.awg.config.ParseException
-import org.amnezia.awg.crypto.Key
-import org.amnezia.awg.crypto.KeyFormatException
+import com.dragsotka.vpn.Application
+import com.dragsotka.vpn.R
+import com.dragsotka.vpn.backend.BackendException
+import com.dragsotka.vpn.util.RootShell.RootShellException
+import com.dragsotka.vpn.config.BadConfigException
+import com.dragsotka.vpn.config.InetEndpoint
+import com.dragsotka.vpn.config.InetNetwork
+import com.dragsotka.vpn.config.ParseException
+import com.dragsotka.vpn.crypto.Key
+import com.dragsotka.vpn.crypto.KeyFormatException
 import java.net.InetAddress
 
 object ErrorMessages {

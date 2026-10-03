@@ -3,14 +3,14 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.amnezia.awg.config;
+package com.dragsotka.vpn.config;
 
-import org.amnezia.awg.config.BadConfigException.Location;
-import org.amnezia.awg.config.BadConfigException.Reason;
-import org.amnezia.awg.config.BadConfigException.Section;
-import org.amnezia.awg.crypto.Key;
-import org.amnezia.awg.crypto.KeyFormatException;
-import org.amnezia.awg.util.NonNullForAll;
+import com.dragsotka.vpn.config.BadConfigException.Location;
+import com.dragsotka.vpn.config.BadConfigException.Reason;
+import com.dragsotka.vpn.config.BadConfigException.Section;
+import com.dragsotka.vpn.crypto.Key;
+import com.dragsotka.vpn.crypto.KeyFormatException;
+import com.dragsotka.vpn.util.NonNullForAll;
 
 import java.util.Collection;
 import java.util.Collections;

@@ -2,7 +2,7 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package org.amnezia.awg.activity
+package com.dragsotka.vpn.activity
 
 import android.content.ComponentName
 import android.os.Bundle
@@ -12,12 +12,12 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import org.amnezia.awg.Application
-import org.amnezia.awg.QuickTileService
-import org.amnezia.awg.R
-import org.amnezia.awg.backend.GoBackend
-import org.amnezia.awg.backend.Tunnel
-import org.amnezia.awg.util.ErrorMessages
+import com.dragsotka.vpn.Application
+import com.dragsotka.vpn.QuickTileService
+import com.dragsotka.vpn.R
+import com.dragsotka.vpn.backend.GoBackend
+import com.dragsotka.vpn.backend.Tunnel
+import com.dragsotka.vpn.util.ErrorMessages
 import kotlinx.coroutines.launch
 
 class TunnelToggleActivity : AppCompatActivity() {

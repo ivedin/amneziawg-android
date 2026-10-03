@@ -1,4 +1,4 @@
-package org.amnezia.awg;
+package com.dragsotka.vpn;
 
 import androidx.annotation.Nullable;
 
