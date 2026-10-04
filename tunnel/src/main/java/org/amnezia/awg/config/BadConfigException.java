@@ -3,10 +3,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.dragsotka.vpn.config;
+package org.amnezia.awg.config;
 
-import com.dragsotka.vpn.crypto.KeyFormatException;
-import com.dragsotka.vpn.util.NonNullForAll;
+import org.amnezia.awg.crypto.KeyFormatException;
+import org.amnezia.awg.util.NonNullForAll;
 
 import androidx.annotation.Nullable;
 

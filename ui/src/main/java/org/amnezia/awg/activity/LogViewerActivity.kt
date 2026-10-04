@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.dragsotka.vpn.activity
+package org.amnezia.awg.activity
 
 import android.content.ClipDescription.compareMimeTypes
 import android.content.ContentProvider
@@ -36,13 +36,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textview.MaterialTextView
-import com.dragsotka.vpn.BuildConfig
-import com.dragsotka.vpn.R
-import com.dragsotka.vpn.databinding.LogViewerActivityBinding
-import com.dragsotka.vpn.util.DownloadsFileSaver
-import com.dragsotka.vpn.util.ErrorMessages
-import com.dragsotka.vpn.util.resolveAttribute
-import com.dragsotka.vpn.crypto.KeyPair
+import org.amnezia.awg.BuildConfig
+import org.amnezia.awg.R
+import org.amnezia.awg.databinding.LogViewerActivityBinding
+import org.amnezia.awg.util.DownloadsFileSaver
+import org.amnezia.awg.util.ErrorMessages
+import org.amnezia.awg.util.resolveAttribute
+import org.amnezia.awg.crypto.KeyPair
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.dragsotka.vpn.preference
+package org.amnezia.awg.preference
 
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences

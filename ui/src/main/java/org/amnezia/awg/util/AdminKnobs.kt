@@ -3,11 +3,11 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.dragsotka.vpn.util
+package org.amnezia.awg.util
 
 import android.content.RestrictionsManager
 import androidx.core.content.getSystemService
-import com.dragsotka.vpn.Application
+import org.amnezia.awg.Application
 
 object AdminKnobs {
     private val restrictions: RestrictionsManager? = Application.get().getSystemService()

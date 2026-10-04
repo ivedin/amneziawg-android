@@ -2,14 +2,14 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package com.dragsotka.vpn
+package org.amnezia.awg
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.util.Log
-import com.dragsotka.vpn.backend.AwgQuickBackend
-import com.dragsotka.vpn.util.applicationScope
+import org.amnezia.awg.backend.AwgQuickBackend
+import org.amnezia.awg.util.applicationScope
 import kotlinx.coroutines.launch
 
 class BootShutdownReceiver : BroadcastReceiver() {

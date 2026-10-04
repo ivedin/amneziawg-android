@@ -2,7 +2,7 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package com.dragsotka.vpn.fragment
+package org.amnezia.awg.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -15,12 +15,12 @@ import androidx.core.view.MenuProvider
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
-import com.dragsotka.vpn.R
-import com.dragsotka.vpn.backend.Tunnel
-import com.dragsotka.vpn.databinding.TunnelDetailFragmentBinding
-import com.dragsotka.vpn.databinding.TunnelDetailPeerBinding
-import com.dragsotka.vpn.model.ObservableTunnel
-import com.dragsotka.vpn.util.QuantityFormatter
+import org.amnezia.awg.R
+import org.amnezia.awg.backend.Tunnel
+import org.amnezia.awg.databinding.TunnelDetailFragmentBinding
+import org.amnezia.awg.databinding.TunnelDetailPeerBinding
+import org.amnezia.awg.model.ObservableTunnel
+import org.amnezia.awg.util.QuantityFormatter
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

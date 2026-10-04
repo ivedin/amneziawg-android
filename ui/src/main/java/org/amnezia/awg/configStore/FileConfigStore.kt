@@ -2,13 +2,13 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package com.dragsotka.vpn.configStore
+package org.amnezia.awg.configStore
 
 import android.content.Context
 import android.util.Log
-import com.dragsotka.vpn.R
-import com.dragsotka.vpn.config.BadConfigException
-import com.dragsotka.vpn.config.Config
+import org.amnezia.awg.R
+import org.amnezia.awg.config.BadConfigException
+import org.amnezia.awg.config.Config
 import java.io.File
 import java.io.FileInputStream
 import java.io.FileNotFoundException

@@ -2,7 +2,7 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package com.dragsotka.vpn.databinding
+package org.amnezia.awg.databinding
 
 import android.text.InputFilter
 import android.view.LayoutInflater
@@ -18,14 +18,14 @@ import androidx.databinding.adapters.ListenerUtil
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.dragsotka.vpn.BR
-import com.dragsotka.vpn.R
-import com.dragsotka.vpn.databinding.ObservableKeyedRecyclerViewAdapter.RowConfigurationHandler
-import com.dragsotka.vpn.widget.ToggleSwitch
-import com.dragsotka.vpn.widget.ToggleSwitch.OnBeforeCheckedChangeListener
-import com.dragsotka.vpn.widget.TvCardView
-import com.dragsotka.vpn.config.Attribute
-import com.dragsotka.vpn.config.InetNetwork
+import org.amnezia.awg.BR
+import org.amnezia.awg.R
+import org.amnezia.awg.databinding.ObservableKeyedRecyclerViewAdapter.RowConfigurationHandler
+import org.amnezia.awg.widget.ToggleSwitch
+import org.amnezia.awg.widget.ToggleSwitch.OnBeforeCheckedChangeListener
+import org.amnezia.awg.widget.TvCardView
+import org.amnezia.awg.config.Attribute
+import org.amnezia.awg.config.InetNetwork
 import java.net.InetAddress
 import java.util.Optional
 

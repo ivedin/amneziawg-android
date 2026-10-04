@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.dragsotka.vpn.model
+package org.amnezia.awg.model
 
 object TunnelComparator : Comparator<String> {
     private class NaturalSortString(originalString: String) {

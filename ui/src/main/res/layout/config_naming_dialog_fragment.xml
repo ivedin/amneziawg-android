@@ -4,7 +4,7 @@
 
     <data>
 
-        <import type="com.dragsotka.vpn.widget.NameInputFilter" />
+        <import type="org.amnezia.awg.widget.NameInputFilter" />
     </data>
 
     <FrameLayout

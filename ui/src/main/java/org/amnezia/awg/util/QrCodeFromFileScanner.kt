@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.dragsotka.vpn.util
+package org.amnezia.awg.util
 
 import android.content.ContentResolver
 import android.graphics.Bitmap

@@ -2,7 +2,7 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package com.dragsotka.vpn.util
+package org.amnezia.awg.util
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -12,7 +12,7 @@ import android.widget.TextView
 import androidx.core.content.getSystemService
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
-import com.dragsotka.vpn.R
+import org.amnezia.awg.R
 
 /**
  * Standalone utilities for interacting with the system clipboard.

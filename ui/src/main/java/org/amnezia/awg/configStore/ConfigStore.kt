@@ -2,9 +2,9 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package com.dragsotka.vpn.configStore
+package org.amnezia.awg.configStore
 
-import com.dragsotka.vpn.config.Config
+import org.amnezia.awg.config.Config
 
 /**
  * Interface for persistent storage providers for AmneziaWG configurations.

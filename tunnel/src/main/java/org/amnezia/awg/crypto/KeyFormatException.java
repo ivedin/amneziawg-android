@@ -3,9 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.dragsotka.vpn.crypto;
+package org.amnezia.awg.crypto;
 
-import com.dragsotka.vpn.util.NonNullForAll;
+import org.amnezia.awg.util.NonNullForAll;
 
 /**
  * An exception thrown when attempting to parse an invalid key (too short, too long, or byte

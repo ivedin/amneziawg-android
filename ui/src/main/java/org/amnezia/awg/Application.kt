@@ -2,7 +2,7 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package com.dragsotka.vpn
+package org.amnezia.awg
 
 import android.content.Context
 import android.content.Intent
@@ -17,17 +17,17 @@ import androidx.datastore.preferences.core.PreferenceDataStoreFactory
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStoreFile
 import com.google.android.material.color.DynamicColors
-import com.dragsotka.vpn.backend.Backend
-import com.dragsotka.vpn.backend.GoBackend
-import com.dragsotka.vpn.backend.AwgQuickBackend
-import com.dragsotka.vpn.configStore.FileConfigStore
-import com.dragsotka.vpn.model.TunnelManager
-import com.dragsotka.vpn.util.NetworkState
-import com.dragsotka.vpn.util.NetworkType
-import com.dragsotka.vpn.util.RootShell
-import com.dragsotka.vpn.util.ToolsInstaller
-import com.dragsotka.vpn.util.UserKnobs
-import com.dragsotka.vpn.util.applicationScope
+import org.amnezia.awg.backend.Backend
+import org.amnezia.awg.backend.GoBackend
+import org.amnezia.awg.backend.AwgQuickBackend
+import org.amnezia.awg.configStore.FileConfigStore
+import org.amnezia.awg.model.TunnelManager
+import org.amnezia.awg.util.NetworkState
+import org.amnezia.awg.util.NetworkType
+import org.amnezia.awg.util.RootShell
+import org.amnezia.awg.util.ToolsInstaller
+import org.amnezia.awg.util.UserKnobs
+import org.amnezia.awg.util.applicationScope
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -155,7 +155,7 @@ class Application : android.app.Application() {
         coroutineScope.launch {
             try {
                 val activeTunnels = tunnelManager.getTunnels().filter { 
-                    it.state == com.dragsotka.vpn.backend.Tunnel.State.UP 
+                    it.state == org.amnezia.awg.backend.Tunnel.State.UP 
                 }
 
                 if (activeTunnels.isEmpty()) {
@@ -169,10 +169,10 @@ class Application : android.app.Application() {
                     try {
                         Log.d(TAG, "Disconnecting tunnel: ${tunnel.name}")
                         // Toggle tunnel off and on to reconnect
-                        tunnel.setStateAsync(com.dragsotka.vpn.backend.Tunnel.State.DOWN)
+                        tunnel.setStateAsync(org.amnezia.awg.backend.Tunnel.State.DOWN)
                         kotlinx.coroutines.delay(500) // Small delay for cleanup
                         Log.d(TAG, "Reconnecting tunnel: ${tunnel.name}")
-                        tunnel.setStateAsync(com.dragsotka.vpn.backend.Tunnel.State.UP)
+                        tunnel.setStateAsync(org.amnezia.awg.backend.Tunnel.State.UP)
                         Log.i(TAG, "Successfully reconnected tunnel: ${tunnel.name}")
                     } catch (e: Exception) {
                         Log.e(TAG, "Failed to reconnect tunnel ${tunnel.name}", e)

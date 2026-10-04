@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.dragsotka.vpn.util
+package org.amnezia.awg.util
 
 import android.icu.text.ListFormatter
 import android.icu.text.MeasureFormat
@@ -11,8 +11,8 @@ import android.icu.text.RelativeDateTimeFormatter
 import android.icu.util.Measure
 import android.icu.util.MeasureUnit
 import android.os.Build
-import com.dragsotka.vpn.Application
-import com.dragsotka.vpn.R
+import org.amnezia.awg.Application
+import org.amnezia.awg.R
 import java.util.Locale
 import kotlin.time.Duration.Companion.seconds
 

@@ -3,9 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.dragsotka.vpn.backend;
+package org.amnezia.awg.backend;
 
-import com.dragsotka.vpn.util.NonNullForAll;
+import org.amnezia.awg.util.NonNullForAll;
 
 import java.util.regex.Pattern;
 

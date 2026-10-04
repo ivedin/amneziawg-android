@@ -2,15 +2,15 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package com.dragsotka.vpn.preference
+package org.amnezia.awg.preference
 
 import android.content.Context
 import android.util.AttributeSet
 import androidx.preference.Preference
-import com.dragsotka.vpn.Application
-import com.dragsotka.vpn.R
-import com.dragsotka.vpn.util.ToolsInstaller
-import com.dragsotka.vpn.util.lifecycleScope
+import org.amnezia.awg.Application
+import org.amnezia.awg.R
+import org.amnezia.awg.util.ToolsInstaller
+import org.amnezia.awg.util.lifecycleScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

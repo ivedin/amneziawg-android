@@ -2,7 +2,7 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package com.dragsotka.vpn.fragment
+package org.amnezia.awg.fragment
 
 import android.content.Intent
 import android.content.res.Resources
@@ -26,17 +26,17 @@ import com.google.android.material.snackbar.Snackbar
 import com.google.zxing.qrcode.QRCodeReader
 import com.journeyapps.barcodescanner.ScanContract
 import com.journeyapps.barcodescanner.ScanOptions
-import com.dragsotka.vpn.Application
-import com.dragsotka.vpn.R
-import com.dragsotka.vpn.activity.TunnelCreatorActivity
-import com.dragsotka.vpn.databinding.ObservableKeyedRecyclerViewAdapter.RowConfigurationHandler
-import com.dragsotka.vpn.databinding.TunnelListFragmentBinding
-import com.dragsotka.vpn.databinding.TunnelListItemBinding
-import com.dragsotka.vpn.model.ObservableTunnel
-import com.dragsotka.vpn.util.ErrorMessages
-import com.dragsotka.vpn.util.QrCodeFromFileScanner
-import com.dragsotka.vpn.util.TunnelImporter
-import com.dragsotka.vpn.widget.MultiselectableRelativeLayout
+import org.amnezia.awg.Application
+import org.amnezia.awg.R
+import org.amnezia.awg.activity.TunnelCreatorActivity
+import org.amnezia.awg.databinding.ObservableKeyedRecyclerViewAdapter.RowConfigurationHandler
+import org.amnezia.awg.databinding.TunnelListFragmentBinding
+import org.amnezia.awg.databinding.TunnelListItemBinding
+import org.amnezia.awg.model.ObservableTunnel
+import org.amnezia.awg.util.ErrorMessages
+import org.amnezia.awg.util.QrCodeFromFileScanner
+import org.amnezia.awg.util.TunnelImporter
+import org.amnezia.awg.widget.MultiselectableRelativeLayout
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll

@@ -3,10 +3,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.dragsotka.vpn.crypto;
+package org.amnezia.awg.crypto;
 
-import com.dragsotka.vpn.crypto.KeyFormatException.Type;
-import com.dragsotka.vpn.util.NonNullForAll;
+import org.amnezia.awg.crypto.KeyFormatException.Type;
+import org.amnezia.awg.util.NonNullForAll;
 
 import java.security.MessageDigest;
 import java.security.SecureRandom;

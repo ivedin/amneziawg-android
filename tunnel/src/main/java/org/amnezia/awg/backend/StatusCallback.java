@@ -1,4 +1,4 @@
-package com.dragsotka.vpn.backend;
+package org.amnezia.awg.backend;
 
 /**
  * Callback for status changes detected by the status polling job.

@@ -3,9 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.dragsotka.vpn.crypto;
+package org.amnezia.awg.crypto;
 
-import com.dragsotka.vpn.util.NonNullForAll;
+import org.amnezia.awg.util.NonNullForAll;
 
 /**
  * Represents a Curve25519 key pair as used by AmneziaWG.

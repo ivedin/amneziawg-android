@@ -3,12 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.dragsotka.vpn.backend;
+package org.amnezia.awg.backend;
 
 import android.os.SystemClock;
 
-import com.dragsotka.vpn.crypto.Key;
-import com.dragsotka.vpn.util.NonNullForAll;
+import org.amnezia.awg.crypto.Key;
+import org.amnezia.awg.util.NonNullForAll;
 
 import java.util.HashMap;
 import java.util.Map;

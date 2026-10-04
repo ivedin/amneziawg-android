@@ -7,9 +7,9 @@
 
         <import type="android.view.View" />
 
-        <import type="com.dragsotka.vpn.model.ObservableTunnel" />
+        <import type="org.amnezia.awg.model.ObservableTunnel" />
 
-        <import type="com.dragsotka.vpn.activity.TvMainActivity.KeyedFile" />
+        <import type="org.amnezia.awg.activity.TvMainActivity.KeyedFile" />
 
         <variable
             name="isDeleting"
@@ -17,7 +17,7 @@
 
         <variable
             name="files"
-            type="com.dragsotka.vpn.databinding.ObservableKeyedArrayList&lt;String, KeyedFile&gt;" />
+            type="org.amnezia.awg.databinding.ObservableKeyedArrayList&lt;String, KeyedFile&gt;" />
 
         <variable
             name="filesRoot"
@@ -25,15 +25,15 @@
 
         <variable
             name="tunnels"
-            type="com.dragsotka.vpn.databinding.ObservableKeyedArrayList&lt;String, ObservableTunnel&gt;" />
+            type="org.amnezia.awg.databinding.ObservableKeyedArrayList&lt;String, ObservableTunnel&gt;" />
 
         <variable
             name="tunnelRowConfigurationHandler"
-            type="com.dragsotka.vpn.databinding.ObservableKeyedRecyclerViewAdapter.RowConfigurationHandler" />
+            type="org.amnezia.awg.databinding.ObservableKeyedRecyclerViewAdapter.RowConfigurationHandler" />
 
         <variable
             name="filesRowConfigurationHandler"
-            type="com.dragsotka.vpn.databinding.ObservableKeyedRecyclerViewAdapter.RowConfigurationHandler" />
+            type="org.amnezia.awg.databinding.ObservableKeyedRecyclerViewAdapter.RowConfigurationHandler" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

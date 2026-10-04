@@ -2,7 +2,7 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package com.dragsotka.vpn.fragment
+package org.amnezia.awg.fragment
 
 import android.content.Context
 import android.util.Log
@@ -14,16 +14,16 @@ import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.snackbar.Snackbar
-import com.dragsotka.vpn.Application
-import com.dragsotka.vpn.R
-import com.dragsotka.vpn.activity.BaseActivity
-import com.dragsotka.vpn.activity.BaseActivity.OnSelectedTunnelChangedListener
-import com.dragsotka.vpn.backend.GoBackend
-import com.dragsotka.vpn.backend.Tunnel
-import com.dragsotka.vpn.databinding.TunnelDetailFragmentBinding
-import com.dragsotka.vpn.databinding.TunnelListItemBinding
-import com.dragsotka.vpn.model.ObservableTunnel
-import com.dragsotka.vpn.util.ErrorMessages
+import org.amnezia.awg.Application
+import org.amnezia.awg.R
+import org.amnezia.awg.activity.BaseActivity
+import org.amnezia.awg.activity.BaseActivity.OnSelectedTunnelChangedListener
+import org.amnezia.awg.backend.GoBackend
+import org.amnezia.awg.backend.Tunnel
+import org.amnezia.awg.databinding.TunnelDetailFragmentBinding
+import org.amnezia.awg.databinding.TunnelListItemBinding
+import org.amnezia.awg.model.ObservableTunnel
+import org.amnezia.awg.util.ErrorMessages
 import kotlinx.coroutines.launch
 
 /**

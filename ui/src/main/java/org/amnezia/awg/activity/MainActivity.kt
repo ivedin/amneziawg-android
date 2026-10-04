@@ -2,7 +2,7 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package com.dragsotka.vpn.activity
+package org.amnezia.awg.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -15,10 +15,10 @@ import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.fragment.app.commit
-import com.dragsotka.vpn.R
-import com.dragsotka.vpn.fragment.TunnelDetailFragment
-import com.dragsotka.vpn.fragment.TunnelEditorFragment
-import com.dragsotka.vpn.model.ObservableTunnel
+import org.amnezia.awg.R
+import org.amnezia.awg.fragment.TunnelDetailFragment
+import org.amnezia.awg.fragment.TunnelEditorFragment
+import org.amnezia.awg.model.ObservableTunnel
 
 /**
  * CRUD interface for AmneziaWG tunnels. This activity serves as the main entry point to the

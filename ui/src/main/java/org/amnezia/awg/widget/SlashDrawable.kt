@@ -3,7 +3,7 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package com.dragsotka.vpn.widget
+package org.amnezia.awg.widget
 
 import android.animation.ObjectAnimator
 import android.content.res.ColorStateList

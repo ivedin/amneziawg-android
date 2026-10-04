@@ -2,7 +2,7 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package com.dragsotka.vpn.databinding
+package org.amnezia.awg.databinding
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -11,7 +11,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ObservableList
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
-import com.dragsotka.vpn.BR
+import org.amnezia.awg.BR
 import java.lang.ref.WeakReference
 
 /**

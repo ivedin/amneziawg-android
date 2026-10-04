@@ -2,13 +2,13 @@
  * Copyright © 2017-2023 WireGuard LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
-package com.dragsotka.vpn.model
+package org.amnezia.awg.model
 
 import android.graphics.drawable.Drawable
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable
-import com.dragsotka.vpn.BR
-import com.dragsotka.vpn.databinding.Keyed
+import org.amnezia.awg.BR
+import org.amnezia.awg.databinding.Keyed
 
 class ApplicationData(val icon: Drawable, val name: String, val packageName: String, isSelected: Boolean) : BaseObservable(), Keyed<String> {
     override val key = name
