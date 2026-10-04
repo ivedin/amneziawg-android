@@ -17,7 +17,7 @@ android {
         dataBinding = true
         viewBinding = true
     }
-    namespace = pkg
+    namespace = "org.amnezia.awg"
     defaultConfig {
         applicationId = "com.dragsotka.vpn"
         targetSdk = 36
